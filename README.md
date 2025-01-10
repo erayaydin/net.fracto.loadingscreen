@@ -150,6 +150,17 @@ The states ensure that the loading flow is organized and extensible.
 
 ### 📋 Loading Screen States
 
+```mermaid
+stateDiagram-v2
+    [*] --> WaitingForLoad
+    WaitingForLoad --> Loading
+    Loading --> Loaded
+    Loaded --> Continue
+    Loaded --> Ending
+    Continue --> Ending
+    Ending --> [*]
+```
+
 The loading screen goes through the following states in order:
 
 1. **`WaitingForLoadState`:** This is the initial state where the loading screen waits for the scene to be ready for
