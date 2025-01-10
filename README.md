@@ -142,3 +142,59 @@ To change the spinner:
 
 1. Duplicate the default loading screen prefab.
 2. Replace the `Spinner` game object with your preferred spinner.
+
+## 🌀 Finite State Machine Integration
+
+This loading screen system uses a Finite State Machine (FSM) to manage different stages of the loading process.
+The states ensure that the loading flow is organized and extensible.
+
+### 📋 Loading Screen States
+
+The loading screen goes through the following states in order:
+
+1. **`WaitingForLoadState`:** This is the initial state where the loading screen waits for the scene to be ready for
+loading.
+2. **`LoadingState`:** This state is active during the loading process, where assets or scenes are being loaded.
+3. **`LoadedState`:** After the scene is loaded, this state handles transitioning to either the `ContinueState` or
+`EndingState`.
+4. **`ContinueState`:** Displays the continuation or next steps to the user.
+5. **`EndingState`:** Marks the end of the loading process and transitions to the main scene.
+
+### ⚙️ State Interface: `ILoadingState`
+
+Each state implements the `ILoadingState` interface, allowing developers to manage how each state behaves.
+The interface contains three methods:
+
+- **Enter:** Called when entering a state. Use it to initialize any variables or prepare the state.
+- **Update:** Called every frame while the state is active. Use it for ongoing updates during the state.
+- **Exit:** Called when exiting the state. Use it for cleaning up resources or resetting variables.
+
+```csharp
+namespace Fracto.LoadingScreen.States
+{
+    public interface ILoadingState
+    {
+        void Enter(LoadingScreen context);
+        void Update(LoadingScreen context);
+        void Exit(LoadingScreen context);
+    }
+}
+```
+
+### 🚦 Managing State Transitions
+
+To manage state transitions, the `LoadingScreen` class maintains the current state and transitions between them.
+Developers can extend or modify the behavior of each state by creating custom implementations of the `ILoadingState`
+interface.
+
+For example, you can easily switch between states like this:
+
+```csharp
+public void Update(LoadingScreen context)
+{
+    if (...)
+    {
+        context.SetState(new AnotherState());
+    }
+}
+```
