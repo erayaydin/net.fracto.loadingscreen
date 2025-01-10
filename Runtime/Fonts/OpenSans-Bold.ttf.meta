@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 05a45f99ecc5bbb4aa6c88eb56cebc9c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Open Sans
+  fontNames:
+  - Open Sans
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250428
+  packageName: Loading Screen Studio
+  packageVersion: 2.0.8
+  assetPath: Assets/Loading Screen Studio/Fonts/OpenSans-Bold.ttf
+  uploadId: 718222

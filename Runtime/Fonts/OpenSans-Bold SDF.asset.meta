@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd5dd1ac72c726244a3a06735fdc5ed1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250428
+  packageName: Loading Screen Studio
+  packageVersion: 2.0.8
+  assetPath: Assets/Loading Screen Studio/Fonts/OpenSans-Bold SDF.asset
+  uploadId: 718222

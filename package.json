@@ -1,0 +1,21 @@
+{
+    "name": "net.fracto.loadingscreen",
+    "displayName": "Loading Screen",
+    "version": "0.1.0",
+    "unity": "6000.0",
+    "description": "Loading screen",
+    "dependencies": {
+        "com.unity.textmeshpro": "5.0.0",
+        "com.unity.ugui": "2.0.0"
+    },
+    "homepage": "https://github.com/erayaydin/net.fracto.loadingscreen.git",
+    "bugs": {
+        "url": "https://github.com/erayaydin/net.fracto.loadingscreen/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/erayaydin/net.fracto.loadingscreen.git"
+    },
+    "license": "MIT",
+    "author": "Fracto (https://fractogame.com)"
+}
