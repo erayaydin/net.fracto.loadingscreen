@@ -28,7 +28,7 @@ Start by instantiating the loading screen prefab in your scene:
 [SerializeField]
 private GameObject loadingScreenPrefab;
 
-public GameObject initializeLoadingScreen()
+private GameObject initializeLoadingScreen()
 {
     return Instantiate(loadingScreenPrefab);
 }
