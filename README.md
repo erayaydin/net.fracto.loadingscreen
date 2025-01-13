@@ -28,9 +28,9 @@ Start by instantiating the loading screen prefab in your scene:
 [SerializeField]
 private GameObject loadingScreenPrefab;
 
-public void initializeLoadingScreen()
+public GameObject initializeLoadingScreen()
 {
-    var loadingScreenObj = Instantiate(loadingScreenPrefab);
+    return Instantiate(loadingScreenPrefab);
 }
 ```
 
@@ -39,6 +39,7 @@ You can load scenes using the `LoadingScreen.LoadScene()` method:
 ```csharp
 public void StartLoading()
 {
+    var loadingScreenObj = initializeLoadingScreen();
     var loadingScreen = loadingScreenObj.GetComponent<LoadingScreen>();
     var sceneLoadContext = new SceneLoadContext(
         "Level2", 
