@@ -1,7 +1,7 @@
 {
     "name": "net.fracto.loadingscreen",
     "displayName": "Loading Screen",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "unity": "6000.0",
     "description": "Loading screen",
     "dependencies": {
