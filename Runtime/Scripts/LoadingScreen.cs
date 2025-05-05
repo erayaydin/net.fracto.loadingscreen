@@ -3,7 +3,9 @@ using Fracto.LoadingScreen.Exceptions;
 using Fracto.LoadingScreen.ScriptableObjects;
 using UnityEngine;
 using Fracto.LoadingScreen.States;
+#if ODIN_INSPECTOR
 using Sirenix.OdinInspector;
+#endif
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
